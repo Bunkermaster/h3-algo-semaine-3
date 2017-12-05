@@ -21,7 +21,7 @@ $totalRunTime = 0;
 ob_start();
 while ($iterationCounter++ < ITERATIONS) {
     $index = 0;
-    $longueurDeLaChaine = strlen($leTexte);
+    $longueurDeLaChaine = mb_strlen($leTexte);
     $byteCountDown = 0;
 // tant que je n'ai pas traité tous les caractères, je boucle
     $startTime = microtime(true);
